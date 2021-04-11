@@ -4,7 +4,7 @@ html {
 
 body {
   background-image: url("img/logo.jpeg"), 
-  linear-gradient(0, #292929, #292929);;
+    linear-gradient(0, #292929, #292929);
   background-repeat: no-repeat, no-repeat;
   background-size: 100%;
   background-position-y: 42%;
