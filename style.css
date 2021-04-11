@@ -81,7 +81,7 @@ footer img {
 
 @media only screen and (max-width: 768px) and (min-width: 601px) {
   body {
-    background-position-y: 95%;
+    background-position: top;
   }
   body section {
     margin-top: 20vw;
@@ -94,6 +94,9 @@ footer img {
   }
   body section {
     margin-top: 20vw;
+  }
+  ol {
+    padding-left: 0;
   }
 }
 
