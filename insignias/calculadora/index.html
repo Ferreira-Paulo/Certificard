@@ -1,0 +1,42 @@
+<html>
+<head>
+  <title>Imersão Dev - Aula 02</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="page-title">Calculadora</h1>
+    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-calculadora.svg" class="page-logo" alt="">
+    
+      <div class="calculadora">
+        <form name="screen"></form>
+          <input class="result" name='result'disabled >
+        <container class="btns">
+          <a href="https://pauloferreira2000.github.io/Certificard/"><input type="button" href="google.com" class="botao-calculadora logo" value=" "></a>
+          <input type="button" class="botao-calculadora" onclick="ac()" value="AC">
+          <input type="button" class="botao-calculadora" onclick="apagar()" value="<<">
+          <input type="button" class="botao-calculadora coluna" onclick="addParameter('/')" value="/">
+          <input type="button" class="botao-calculadora" onclick="addParameter(7)" value="7">
+          <input type="button" class="botao-calculadora" onclick="addParameter(8)" value="8">
+          <input type="button" class="botao-calculadora" onclick="addParameter(9)" value="9">
+          <input type="button" class="botao-calculadora coluna" onclick="addParameter('*')" value="X">
+          <input type="button" class="botao-calculadora" onclick="addParameter(4)" value="4">
+          <input type="button" class="botao-calculadora" onclick="addParameter(5)" value="5">
+          <input type="button" class="botao-calculadora" onclick="addParameter(6)" value="6">
+          <input type="button" class="botao-calculadora coluna" onclick="addParameter('-')" value="-">
+          <input type="button" class="botao-calculadora" onclick="addParameter(1)" value="1">
+          <input type="button" class="botao-calculadora" onclick="addParameter(2)"  value="2">
+          <input type="button" class="botao-calculadora" onclick="addParameter(3)" value="3">
+          <input type="button" class="botao-calculadora coluna" onclick="addParameter('+')" value="+">
+          <input type="button" class="botao-calculadora zero" onclick="addParameter(0)"  value="0">
+          <input type="button" class="botao-calculadora" onclick="addParameter('.')"  value=".">
+          <input type="button" class="botao-calculadora coluna border" onclick="addEqual()" value="=">
+        </container>
+      </div>
+  </div>
+  <a href="https://alura.com.br/" target="_blank">
+    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+  </a>
+</body>
+<script src="script.js"></script>
+</html>
