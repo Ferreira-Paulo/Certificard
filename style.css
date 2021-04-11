@@ -50,6 +50,7 @@ ol {
 
 li {
   margin-right: 10px;
+  list-style-type: none;
 }
 
 a {
@@ -89,7 +90,7 @@ footer img {
 
 @media only screen and (max-width: 600px) {
   body {
-    background-position-y: 82%;
+    background-position: top;
   }
   body section {
     margin-top: 20vw;
@@ -98,7 +99,7 @@ footer img {
   
 @media only screen and (max-width: 477px) {
   body {
-    background-position-y: -14%;
+    background-position: top;
   }
   body section {
     margin-top: 20vw;
@@ -107,7 +108,7 @@ footer img {
 
 @media only screen and (max-width: 330px) {
   body {
-    background-position-y: -8%;
+    background-position: top;
   }
   body section {
     margin-top: 20vw;
