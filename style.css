@@ -78,24 +78,6 @@ footer img {
   padding: 12px;
 }
 
-@media only screen and (max-width: 600px) {
-  body {
-    background-position-y: 82%;
-  }
-  body section {
-    margin-top: 20vw;
-  }
-}
-
-@media only screen and (max-width: 477px) {
-  body {
-    background-position-y: -14%;
-  }
-  body section {
-    margin-top: 20vw;
-  }
-}
-
 @media only screen and (max-width: 768px) and (min-width: 601px) {
   body {
     background-position-y: 95%;
@@ -105,3 +87,29 @@ footer img {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    background-position-y: 82%;
+  }
+  body section {
+    margin-top: 20vw;
+  }
+}
+  
+@media only screen and (max-width: 477px) {
+  body {
+    background-position-y: -14%;
+  }
+  body section {
+    margin-top: 20vw;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  body {
+    background-position-y: -8%;
+  }
+  body section {
+    margin-top: 20vw;
+  }
+}
