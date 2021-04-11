@@ -112,15 +112,19 @@ footer img {
   }
 }
 
-@media only screen and (max-width: 330px) {
+@media only screen and (max-width: 359px) {
   body {
     background-position: top;
   }
   body section {
     margin-top: 20vw;
   }
+  div {
+    padding-left: 11px;
+  }
   ol {
     padding-left: 0;
   }
+
 }
 
