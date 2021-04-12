@@ -1,0 +1,78 @@
+body {
+  font-family: 'Roboto Mono',monospace;
+  background-image: url('https://images.wallpapersden.com/image/download/pokemon-pikachu-art_a25tbW6UmZqaraWkpJRmbmdlrWZlbWU.jpg');
+  background-size: cover;
+  background-position-x: center;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+}
+
+.page-title {
+  color: #ffffff;
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 200px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right:10px;
+}
+
+@media (max-height: 500px) {
+  body {
+    min-height:800px;
+  }
+}
+
+.pokemon {
+  display: grid;
+  border-radius: 10%;
+  background: #585858;
+  width: 35%;
+  margin: 32px auto;
+}
+
+.pokemon h1 {
+  color: #fe5858;
+}
+
+#pokemon {
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  border: 5px solid black;
+  border-radius: 10%;
+}
+
+.span {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#nomePokemon {
+  margin: 32px auto -2 auto;
+  font-size: 32px;
+  width: 100%;
+}
+
+input[type = button] {
+  font-size: 32px;
+  margin: 0 auto 15px;
+  width: 100%;
+  border-radius: 0 0 15px 15px;
+}

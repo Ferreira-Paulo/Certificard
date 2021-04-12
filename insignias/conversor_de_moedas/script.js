@@ -8,6 +8,7 @@ function limpaMostrar(){
 function mostrarMoedas() {
   limpaMostrar()
   document.getElementById('body').style.background = 'url("https://images.unsplash.com/photo-1582281171754-405cb2a75fb1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80")'
+  document.getElementById('body').style.backgroundSize = 'cover'
   var mostrarMoeda = document.getElementById("mostrarMoedas")
   var html = `<div class="alert alert-warning">
   <strong>ATENÇÃO!</strong> Os valores mostrados para conversão de moedas são fictícios. Projeto feito com intenção de estudo em logica de programação.
@@ -52,6 +53,7 @@ function mostrarMoedas() {
 function mostrarTemperaturas() {
   limpaMostrar()
   document.getElementById('body').style.background = 'url("https://images.unsplash.com/photo-1580917922805-f8f57e08c0ae?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80")'
+  document.getElementById('body').style.backgroundSize = 'cover'
   var mostrarTemperatura = document.getElementById("mostrarTemperaturas")
   var html = `<div id="mostrarTemperaturas">
   <label class="tipo">
@@ -93,6 +95,7 @@ function mostrarTemperaturas() {
 function mostrarDistancias() {
   limpaMostrar()
   document.getElementById('body').style.background = 'url("https://images.unsplash.com/photo-1585511426526-a21c74efa642?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80")'
+  document.getElementById('body').style.backgroundSize = 'cover'
   var mostrarDistancia = document.getElementById("mostrarDistancias")
   var html = `<div id="mostrarDistancias">
   <label class="tipo">
