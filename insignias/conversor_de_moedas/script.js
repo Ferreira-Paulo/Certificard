@@ -2,6 +2,7 @@ function limpaMostrar(){
   document.getElementById('mostrarTemperaturas').innerHTML = ''
   document.getElementById('mostrarDistancias').innerHTML = ''
   document.getElementById('mostrarMoedas').innerHTML = ''
+  document.getElementById("body").style.background = ''
 }
 
 function mostrarMoedas() {
@@ -189,10 +190,10 @@ function currencyConverter(t) {
       // Cálculo da conversão baseado na escolha do tipo de moeda
       if (currencyTypeFrom == "K") {
         if (currencyTypeTo == "C") {
-          convertedCurrency = currencyValueFrom / 5.51;
+          convertedCurrency = currencyValueFrom - 273.15;
         }
         else if (currencyTypeTo == "F") {
-          convertedCurrency = currencyValueFrom / 6.58;
+          convertedCurrency = ((currencyValueFrom - 273.15) * 1.8) +32;
         }
         else {
           convertedCurrency = currencyValueFrom;
@@ -200,10 +201,10 @@ function currencyConverter(t) {
       }
       else if (currencyTypeFrom == "C") {
         if (currencyTypeTo == "K") {
-          convertedCurrency = currencyValueFrom * 5.51;
+          convertedCurrency = currencyValueFrom + 273.15;
         }
         else if (currencyTypeTo == "F") {
-          convertedCurrency = currencyValueFrom / 1.19;
+          convertedCurrency = (currencyValueFrom * 1.8) + 32;
         }
         else {
           convertedCurrency = currencyValueFrom;
@@ -211,10 +212,10 @@ function currencyConverter(t) {
       }
       else {
         if (currencyTypeTo == "K") {
-          convertedCurrency = currencyValueFrom * 6.58;
+          convertedCurrency = ((currencyValueFrom - 32) / 1.8) + 273.15;
         }
         else if (currencyTypeTo == "C") {
-          convertedCurrency = currencyValueFrom * 1.19;
+          convertedCurrency = (currencyValueFrom - 32) / 1.8;
         }
         else {
           convertedCurrency = currencyValueFrom;
@@ -232,10 +233,10 @@ function currencyConverter(t) {
       // Cálculo da conversão baseado na escolha do tipo de moeda
       if (currencyTypeFrom == "KM") {
         if (currencyTypeTo == "M") {
-          convertedCurrency = currencyValueFrom / 5.51;
+          convertedCurrency = currencyValueFrom * 1000;
         }
         else if (currencyTypeTo == "C") {
-          convertedCurrency = currencyValueFrom / 6.58;
+          convertedCurrency = currencyValueFrom * 100000;
         }
         else {
           convertedCurrency = currencyValueFrom;
@@ -243,10 +244,10 @@ function currencyConverter(t) {
       }
       else if (currencyTypeFrom == "M") {
         if (currencyTypeTo == "KM") {
-          convertedCurrency = currencyValueFrom * 5.51;
+          convertedCurrency = currencyValueFrom / 1000;
         }
         else if (currencyTypeTo == "C") {
-          convertedCurrency = currencyValueFrom / 1.19;
+          convertedCurrency = currencyValueFrom * 100;
         }
         else {
           convertedCurrency = currencyValueFrom;
@@ -254,20 +255,19 @@ function currencyConverter(t) {
       }
       else {
         if (currencyTypeTo == "KM") {
-          convertedCurrency = currencyValueFrom * 6.58;
+          convertedCurrency = currencyValueFrom / 100000;
+          console.log(convertedCurrency)
         }
         else if (currencyTypeTo == "M") {
-          convertedCurrency = currencyValueFrom * 1.19;
+          convertedCurrency = currencyValueFrom / 100;
         }
         else {
           convertedCurrency = currencyValueFrom;
         }
       }
       // Impressão do resultado da conversão para o usuário
-      document.querySelector('#valor_para').innerHTML = convertedCurrency.toFixed(2);
+      document.querySelector('#valor_para').innerHTML = convertedCurrency;
     } 
-    // Impressão do resultado da conversão para o usuário
-    document.querySelector('#valor_para').innerHTML = convertedCurrency.toFixed(2);
 };
 
 function funcaoConverter(e) {
