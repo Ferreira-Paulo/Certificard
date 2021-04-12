@@ -7,108 +7,26 @@
   <title>imersaoDev - Conversor de Moedas</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="body" >
   <main>
     <section class="converter">
       <img class="logo-imersao-dev" src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt="Logo Alura">
       <h1>Conversor</h1>
       <h2>Escolha o que deseja Converter:</h2>
       <div class="escolha">
-        <Button onclick="mostrarMoedas()">Moedas</Button>
-        <Button onclick="mostrarTemperaturas()">Temperatura</Button>
-        <Button onclick="mostrarDistancias()">Distancia</Button>
+        <Button id="moeda" onclick="mostrarMoedas()">Moeda</Button>
+        <Button id="temperatura" onclick="mostrarTemperaturas()">Temperatura</Button>
+        <Button id="distancia" onclick="mostrarDistancias()">Distancia</Button>
       </div>
-      
-      <div id="mostrarMoedas">
-        <label class="tipo">De:</label>
-        <container class="primeiro_valor">
-          <div>
-            <select class="tipo_de">
-              <option value="usd">USD</option>
-              <option value="eur">EUR</option>
-              <option value="brl">BRL</option>
-            </select>
-          </div>
-          <div>
-            <input type="number" id="valor_converter" placeholder="00,00">
-          </div>
-        </container> 
-        <label class="tipo">para:</label>
-        <container class="segundo_valor">
-          <div>
-            <select class="tipo_para">
-              <option value="brl">BRL</option>
-              <option value="usd">USD</option>
-              <option value="eur">EUR</option>
-            </select>
-          </div>
-          <div>
-            <p id="valor_para">00,00</p>
-          </div>
-        </container> 
+      <div>
       </div>
-      
-      <div id="mostrarTemperaturas">
-        <label class="tipo">De:</label>
-        <container class="primeiro_valor">
-          <div>
-            <select class="tipo_de">
-              <option value="K">Kelvin</option>
-              <option value="C">Celsius</option>
-              <option value="F">Fahrenheit</option>
-            </select>
-          </div>
-          <div>
-            <input type="number" id="valor_converter" placeholder="00,00">
-          </div>
-        </container> 
-        <label class="tipo">para:</label>
-        <container class="segundo_valor">
-          <div>
-            <select class="tipo_para">
-              <option value="C">Celsius</option>
-              <option value="K">Kelvin</option>
-              <option value="F">Fahrenheit</option>
-            </select>
-          </div>
-          <div>
-            <p id="valor_para">00,00</p>
-          </div>
-        </container> 
-      </div>
-      
-      <div id="mostrarDistancias">
-        <label class="tipo">De:</label>
-        <container class="primeiro_valor">
-          <div>
-            <select class="tipo_de">
-              <option value="KM">Quilometros</option>
-              <option value="M">Metros</option>
-              <option value="C">Centimetros</option>
-            </select>
-          </div>
-          <div>
-            <input type="number" id="valor_converter" placeholder="00,00">
-          </div>
-        </container> 
-        <label class="tipo">para:</label>
-        <container class="segundo_valor">
-          <div>
-            <select class="tipo_para">
-              <option value="M">Metros</option>
-              <option value="KM">Quilometros</option>
-              <option value="C">Centimetros</option>
-            </select>
-          </div>
-          <div>
-            <p id="valor_para">00,00</p>
-          </div>
-        </container> 
-      </div>
+      <div id="mostrarMoedas"></div>
+      <div id="mostrarTemperaturas"></div>
+      <div id="mostrarDistancias"></div>
 
       </container>
       <a class="logo-alura" href="https://alura.com.br/" target="_blank"><img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo"></a>
-      <button class="btn">Converter</button>
+      <button id="btn" class="btn">Converter</button>
     </section>
   </main>
   <script src="script.js"></script>
