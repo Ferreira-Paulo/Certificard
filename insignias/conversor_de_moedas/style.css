@@ -71,6 +71,10 @@ label img:hover {
 
 /* === MOSTRAR MOEDAS/TEMPERATURA/DISTANCIA ==== */
 
+.alert {
+  color: white;
+}
+
 .primeiro_valor, .segundo_valor {
   display: flex;
 }
