@@ -41,7 +41,7 @@ function mostrarMoedas() {
       </select>
     </div>
     <div>
-      <p id="valor_para">00,00</p>
+      <p id="valor_para"></p>
     </div>
   </container> 
 </div>`
@@ -83,7 +83,7 @@ function mostrarTemperaturas() {
       </select>
     </div>
     <div>
-      <p id="valor_para">00,00</p>
+      <p id="valor_para"></p>
     </div>
   </container> 
 </div>`
@@ -125,7 +125,7 @@ function mostrarDistancias() {
       </select>
     </div>
     <div>
-      <p id="valor_para">00,00</p>
+      <p id="valor_para"></p>
     </div>
   </container> 
 </div>`
