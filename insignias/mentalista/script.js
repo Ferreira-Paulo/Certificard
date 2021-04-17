@@ -1,3 +1,5 @@
+/* Os pokemons estão por enquanto em uma Const direto no código, porém logo irá ser puxado direto da API */
+
 const pokemons = [
   {name: "bulbasaur"},
   {name: "ivysaur"},
@@ -187,7 +189,7 @@ enviar.onclick = () => {
       setTimeout(() => { resetar(); }, 2000)
     }
   }else{
-    document.querySelector('span').innerHTML = "Coloque o name"
+    document.querySelector('span').innerHTML = "Coloque o nome"
   }
 }
 

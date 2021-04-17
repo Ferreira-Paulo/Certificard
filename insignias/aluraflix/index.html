@@ -1,10 +1,15 @@
 <html>
 <head>
     <title>Imersão Dev - Aula 05</title>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
 		<link rel="shortcut icon" href="ifavicon.ico">
+		<div id="panel" class="w3-panel w3-pale-red w3-border">
+			<h3>Aviso!</h3>
+			<p>Ainda esta em processo de desenvolvimento. Data ultima atualização: 11/04/2021.</p>
+		</div>
 		<div class="container">
 			<h1 class="page-title">
 				Aluraflix
@@ -19,10 +24,19 @@
 				<button onClick="adicionarFilme()">Adicionar Filme</button>
 			</div>
     </div>
-    <div id="listaFilmes"></div>
+		<span class="page-error"></span>
     <a href="https://alura.com.br/" target="_blank">
 			<img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
     </a>
+
+		<div id="modal-filmes" class="modal-container">
+			<div class="modal">
+				<button onClick="fechar()" class="fechar">X</button>
+				<span>Selecione o Filme que deseja:</span>
+				<div id="listaFilmes"></div>
+			
+			</div>
+		</div>
 	</body>
 	
 	<script src="script.js"></script>
