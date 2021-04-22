@@ -1,4 +1,4 @@
-const url = 'https://www.episodate.com/api/search?q='
+const url = 'https://www.episodate.com/api/show-details?q='
 
 var filme 
 
@@ -16,7 +16,7 @@ async function requestFilmeInfo(filmeFavorito) {
     var filmeFavorito = campoFilmeFavorito.value
     await requestFilmeInfo(filmeFavorito)
     
-    if(filme.length <= 0) {
+    if(filme <= 0) {
       span = document.querySelector("span")
       span.innerHTML = 'Informe um filme/serie valido!'
     } else {
@@ -27,9 +27,11 @@ async function requestFilmeInfo(filmeFavorito) {
 
 function listarFilmesNaJanela(filme) {
   for (i = 0; i < 5; i++) {
+    console.log(filme[i])
     var listaFilmes = document.querySelector("#listaFilmes")
-    var elementoFilme = "<img src=" + filme[i].image_thumbnail_path + ">"
-    listaFilmes.innerHTML = listaFilmes.innerHTML + elementoFilme
+    var elementoFilmeImg = "<div id='filme'><img src=" + filme[i].image_thumbnail_path + ">"
+    var elementoFilmeName = "<p>" + filme[i].name + "</p></div>"
+    listaFilmes.innerHTML = listaFilmes.innerHTML + elementoFilmeImg + elementoFilmeName
   }
 }
 
